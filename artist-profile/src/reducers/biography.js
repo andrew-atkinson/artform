@@ -2,7 +2,7 @@
 
 const UPDATE_BIOGRAPHY = 'UPDATE_BIOGRAPHY'
 
-/* ------------   ACTION CREATORS     ------------------ */
+/* ------------   ACTION CREATOR     ------------------ */
 
 export const biographyActionCreator = biography => {
     return ({type: UPDATE_BIOGRAPHY, biography})
@@ -11,7 +11,6 @@ export const biographyActionCreator = biography => {
 /* ------------       REDUCER     ------------------ */
 
 export default function reducer(state = [], action) {
-    console.log("testing reducer here:",state, action)
     if (action.type === 'UPDATE_BIOGRAPHY') 
         return action.biography
     return state
