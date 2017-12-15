@@ -1,23 +1,20 @@
-import React, {Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {connect} from 'react-redux'
+import Main from './components/Main'
+import store from './store'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo"/>
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit
-          <code>src/App.js</code>
-          and save to reload.
-        </p>
-      </div>
-    );
+/* ACTION CREATORS */
+import {firstNameActionCreator} from './reducers/firstName'
+import {lastNameActionCreator} from './reducers/lastName'
+import {biographyActionCreator} from './reducers/biography'
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    dispatchFirstName: firstName => dispatch(firstNameActionCreator(firstName)),
+    dispatchLastName: lastName => dispatch(lastNameActionCreator(lastName)),
+    dispatchBiography: biography => dispatch(biographyActionCreator(biography))
   }
 }
 
-export default App;
+const App = connect(null, mapDispatchToProps)(Main)
+
+export default App
