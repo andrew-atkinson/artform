@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import store from '../store'
 
-class TextField extends Component {
+export default class TextField extends Component {
   constructor(props) {
     super(props)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -11,7 +11,7 @@ class TextField extends Component {
 
   handleSubmit(e) {
     e.preventDefault()
-    this.props.dispatch(this.state[this.props.name])
+    this.props.dispatch(this.state[this.props.name] || '')
   }
 
   handleChange(e) {
@@ -28,11 +28,11 @@ class TextField extends Component {
           name={this.props.name}
           placeholder={store.getState()[this.props.name]}
           value={this.state[this.props.name]}
-          onChange={this.handleChange}/>
+          onChange={this.handleChange}
+          onBlur={this.handleSubmit}
+          />
         <input type='submit' hidden/>
       </form>
     )
   }
 }
-
-export default TextField
