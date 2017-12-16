@@ -55,6 +55,7 @@ textarea {
   outline: none;
   color: #ddd;
   transition: color 1.0s;
+  transition: background-color 1.4s;
   text-align: center;
   resize: none;
 }
@@ -68,6 +69,7 @@ textarea:focus {
   line-height: 2.5rem;
   vertical-align: middle;
   transition: color 1.0s;
+  transition: background-color 0.4s;
 }
 
 @media screen and (max-width:340px){

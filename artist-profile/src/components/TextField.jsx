@@ -23,7 +23,7 @@ export default class TextField extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <input
+        <textarea
           type="text"
           name={this.props.name}
           placeholder={store.getState()[this.props.name]}
