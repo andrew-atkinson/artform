@@ -1,28 +1,85 @@
-.App {
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  color: #ddd;
+}
+
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-image: radial-gradient(circle at 0% 0%, #373f52, #252336 51%, #1d1e26);
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  max-width: 1600px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+input[type=text],
+textarea {
+  font-size: 1.8rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 280px;
+  max-height: 400px;
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: 1.4rem 2rem 1.6rem;
+  border-style: none;
+  background: rgba(57, 63, 84, 0.2);
+  outline: none;
+  color: #ddd;
+  transition: font-size 0.3s;
   text-align: center;
+  resize: none;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+input:focus,
+textarea:focus {
+  background: rgba(57, 63, 84, 0.8);
+  flex-grow: 1;
+  color: #7881a1;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  vertical-align: middle;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+
+@media screen and (max-width:340px){
+  input[type=text],
+  textarea {
+    max-width: 230px;
+  }
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@media screen and (min-width:699px){
+  input[type=text],
+  textarea {
+    max-width: 430px;
+  }
 }
