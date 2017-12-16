@@ -20,8 +20,6 @@ p {
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   background-image: radial-gradient(circle at 0% 0%, #373f52, #252336 51%, #1d1e26);
 }
@@ -56,7 +54,7 @@ textarea {
   background: rgba(57, 63, 84, 0.2);
   outline: none;
   color: #ddd;
-  transition: font-size 1.0s;
+  transition: color 1.0s;
   text-align: center;
   resize: none;
 }
@@ -69,7 +67,7 @@ textarea:focus {
   font-size: 2.5rem;
   line-height: 2.5rem;
   vertical-align: middle;
-  transition: font-size 1.0s;
+  transition: color 1.0s;
 }
 
 @media screen and (max-width:340px){
