@@ -1,0 +1,49 @@
+.footer-header,
+.footer-subheading {
+    color: black;
+    font-weight: 200;
+    font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.footer-subheading {
+    color: #757575;
+}
+
+.site-map,
+.copyright {
+    display: flex;
+}
+
+.copyright li {
+    align-items: center;
+}
+
+.site-map li {
+    margin-right: auto;
+}
+
+.site-map li ul li {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #757575;
+    margin-bottom: 15px;
+    padding-right: auto;
+}
+
+.site-map li ul li:first-child {
+    color: black;
+}
+
+i {
+    margin-left: 13px;
+    color: #08006f;
+}
+
+.copyright .date {
+    font-size: .9rem;
+    color: #757575;
+    margin: auto;
+    margin-left: 15px;
+}
