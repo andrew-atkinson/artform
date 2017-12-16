@@ -36,6 +36,10 @@
     color: black;
 }
 
+.site-map li:last-child {
+    margin-right: 0;
+}
+
 i {
     margin-left: 13px;
     color: #08006f;
@@ -46,4 +50,9 @@ i {
     color: #757575;
     margin: auto;
     margin-left: 15px;
+}
+
+.email-box {
+    height: 46px;
+    margin: 10px 0;
 }

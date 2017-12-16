@@ -33,12 +33,12 @@
     background-position-x: 15px;
     padding-left: 40px;
     border-radius: 3px;
+    width: 280px;
+    border: none;
 }
 
 .search-box {
-    width: 280px;
     height: 38px;
-    border: none;
 }
 
 .spacer {
