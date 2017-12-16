@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
 import Main from './components/Main'
-import store from './store'
+import AppCss from './App.css'
 
 /* ACTION CREATORS */
 import {firstNameActionCreator} from './reducers/firstName'
