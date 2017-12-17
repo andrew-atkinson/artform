@@ -17,3 +17,18 @@ body {
 .wrapper {
     margin: 0px 100px;
 }
+
+input[type=text] {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #afafaf;
+    background-color: #f9f9f9;
+    background-image: url('./img/Icons/16x16/Search.png');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 15px;
+    padding-left: 40px;
+    border-radius: 3px;
+}
