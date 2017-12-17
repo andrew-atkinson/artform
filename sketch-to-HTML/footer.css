@@ -40,7 +40,7 @@
     margin-right: 0;
 }
 
-.social {
+.social-icons {
     margin-left: 13px;
     color: #08006f;
 }
@@ -59,7 +59,10 @@
     margin: 10px 0;
 }
 
-@media screen and (max-width: 900px) {
+
+/* tidied into the right files! */
+
+@media screen and (max-width: 920px) {
     .search-box {
         min-width: 260px;
     }
@@ -75,15 +78,15 @@
     .site-map li ul {
         margin-bottom: 10px;
     }
-    .wrapper {
-        margin: 0 10%;
+    .wrapper, .content {
+        margin: 20px 10%;
     }
     .email-box {
         width: 100%;
     }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:720px) {
     .spacer {
         margin: 0;
     }
@@ -103,7 +106,11 @@
     .copyright {
         align-items: center;
     }
-    .social {
+    .social-icons {
         margin: 10px 13px;
+    }
+    .post-view {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

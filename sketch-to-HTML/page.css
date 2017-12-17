@@ -10,8 +10,7 @@ body {
 }
 
 .content {
-    flex: 1 0 auto;
-    margin: 0px 100px;
+    margin: 40px 100px;
 }
 
 .wrapper {
@@ -31,4 +30,37 @@ input[type=text] {
     background-position-x: 15px;
     padding-left: 40px;
     border-radius: 3px;
+}
+
+.post-view {
+    display: flex;
+    align-items: flex-end;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    font-size: 1.059rem;
+    color: black;
+}
+
+.time-ago {
+    font-size: 1.059rem;
+    color: #747574;
+}
+
+.user-portrait {
+    padding-right: 15px;
+}
+
+.comment{
+    font-size: 2.118rem;
+    padding: 20px 0 15px;
+}
+
+.post-image{
+    max-width: 100%;
 }
