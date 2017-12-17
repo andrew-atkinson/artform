@@ -54,8 +54,7 @@ textarea {
   background: rgba(57, 63, 84, 0.2);
   outline: none;
   color: #ddd;
-  transition: color 1.0s;
-  transition: background-color 1.4s;
+  transition: color 1.7s;
   text-align: center;
   resize: none;
 }

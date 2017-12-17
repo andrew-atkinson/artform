@@ -1,6 +1,5 @@
 .container {
     width: 100%;
-    height: 62px;
 }
 
 .nav {
@@ -20,20 +19,8 @@
     color: #08006f;
 }
 
-.search-box,
-.email-box {
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-    color: #afafaf;
-    background-color: #f9f9f9;
-    background-image: url('./img/Icons/16x16/Search.png');
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 15px;
-    padding-left: 40px;
-    border-radius: 3px;
-    width: 280px;
+.search-box {
+    min-width: 360px;
     border: none;
 }
 
