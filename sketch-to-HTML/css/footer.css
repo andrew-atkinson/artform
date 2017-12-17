@@ -59,13 +59,9 @@
     margin: 10px 0;
 }
 
-
-/* tidied into the right files! */
+/* @media styles */
 
 @media screen and (max-width: 920px) {
-    .search-box {
-        min-width: 260px;
-    }
     .site-map {
         flex-direction: column;
         margin: 20px 0;
@@ -78,10 +74,10 @@
     .site-map li ul {
         margin-bottom: 10px;
     }
-    .wrapper, .content {
+    .wrapper{
         margin: 20px 10%;
     }
-    .email-box, .search-box {
+    .email-box{
         width: 100%;
     }
 }
@@ -89,14 +85,6 @@
 @media screen and (max-width:720px) {
     .spacer {
         margin: 0;
-    }
-    .nav {
-        flex-direction: column;
-        align-items: center;
-        margin: 20px 0;
-    }
-    .portrait {
-        display: none;
     }
     .copyright,
     .copyright .date {
@@ -108,9 +96,5 @@
     }
     .social-icons {
         margin: 10px 13px;
-    }
-    .post-view {
-        flex-direction: column;
-        align-items: flex-start;
     }
 }

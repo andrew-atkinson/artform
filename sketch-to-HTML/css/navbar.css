@@ -1,0 +1,93 @@
+.container {
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    margin: 12px 0px;
+}
+
+.nav-item {
+    margin: auto 0px;
+    padding: 0px 15px;
+}
+
+#nav-bars {
+    display: none;
+    color: #08006f;
+}
+
+.nav-toggle {
+    display: block;
+}
+
+.title {
+    font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.294rem;
+    color: #08006f;
+}
+
+.search-box {
+    min-width: 360px;
+    border: none;
+}
+
+.search-box {
+    height: 38px;
+}
+
+.spacer {
+    margin-right: auto;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.portrait {
+    padding-right: 15px;
+}
+
+/* @media styles */
+
+@media screen and (max-width: 920px) {
+    .search-box {
+        min-width: 260px;
+    }
+    .search-box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .spacer {
+        margin: 0;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .portrait {
+        display: none;
+    }
+    #nav-bars {
+        display: inline-block;
+        position: absolute;
+        margin: 20px 0 0 20px;
+    }
+    .nav-toggle {
+        margin: 2px 0;
+        padding: 10px;
+        width: 100%;
+        display: none;
+        text-align: center;
+        background-color: #f9f9f9;
+        line-height: 1rem;
+    }
+    .nav-toggle:nth-child(2) {
+        padding: 10px;
+    }
+}

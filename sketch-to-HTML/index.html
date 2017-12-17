@@ -9,36 +9,28 @@
   <link rel="stylesheet" href="page.css">
   <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="footer.css">
-  <script>document.getElementById('content')
-      .addEventListener('click',
-      function (e) {
-        let idx = 0
-        while (e.path[idx].classList[0] !== 'container' && e.path.length - 3 > idx) {
-          idx++
-        }
-        e.path[idx + 1].classList.toggle('boxHover') // selects parent from path
-        e.path[idx + 1].previousSibling.classList.toggle('textHover')
-        e.path[idx].classList.toggle('containerHover')
-      }
-      )
-  </script>
 </head>
 
 <body>
   <nav class="container">
+    <div id="nav-bars">
+      <a href="">
+        <i class="fa fa-bars fa" aria-hidden="true"></i>
+      </a>
+    </div>
     <ul class="nav" role="navigation">
       <li class="title nav-item">ARTFORM</li>
-      <li class="spacer">
+      <li class="spacer nav-toggle">
         <form>
           <input type="text" class="search-box nav-item" placeholder="Search artists and categories">
           <input type="submit" hidden>
         </form>
       </li>
-      <li class="nav-item">
+      <li class="nav-item nav-toggle">
         Become an Artist</li>
-      <li class="nav-item">
+      <li class="nav-item nav-toggle">
         Explore</li>
-      <li class="nav-item">
+      <li class="nav-item nav-toggle">
         Me
       </li>
       <img class="portrait" src="img/portrait.png" alt="self-portrait" />
@@ -123,5 +115,18 @@
     </ul>
   </footer>
 </body>
+
+<script>
+  document.getElementById('nav-bars').addEventListener('click',
+    function (e) {
+      e.preventDefault()
+      document.querySelectorAll('.nav-toggle')
+        .forEach((el) => el.style.display === 'block' 
+                           ? el.style.display = 'none' 
+                           : el.style.display = 'block'
+      )
+    }
+  )
+</script>
 
 </html>
