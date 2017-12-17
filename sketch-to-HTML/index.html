@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <!-- nav bar -->
   <nav class="container">
     <div id="nav-bars">
       <a href="">
@@ -34,6 +35,7 @@
       <img class="portrait" src="img/portrait.png" alt="self-portrait" />
     </ul>
   </nav>
+  <!-- post view -->
   <section class="content post-view">
     <div class="comment-container">
       <div class="user">
@@ -51,7 +53,7 @@
       <img class="post-image" src="img/thingvellir.jpg" alt="post-image" />
     </div>
   </section>
-
+  <!-- footers -->
   <footer class="wrapper">
     <ul class="site-map">
       <li>
@@ -113,15 +115,15 @@
     </ul>
   </footer>
 </body>
-
+<!-- nav bar menu -->
 <script>
   document.getElementById('nav-bars').addEventListener('click',
     function (e) {
       e.preventDefault()
       document.querySelectorAll('.nav-toggle')
-        .forEach((el) => el.style.display === 'block' 
-                           ? el.style.display = 'none' 
-                           : el.style.display = 'block'
+              .forEach((el) => el.style.display === 'block' 
+                               ? el.style.display = 'none' 
+                               : el.style.display = 'block'
       )
     }
   )
