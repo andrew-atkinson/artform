@@ -9,6 +9,19 @@
   <link rel="stylesheet" href="page.css">
   <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="footer.css">
+  <script>document.getElementById('content')
+      .addEventListener('click',
+      function (e) {
+        let idx = 0
+        while (e.path[idx].classList[0] !== 'container' && e.path.length - 3 > idx) {
+          idx++
+        }
+        e.path[idx + 1].classList.toggle('boxHover') // selects parent from path
+        e.path[idx + 1].previousSibling.classList.toggle('textHover')
+        e.path[idx].classList.toggle('containerHover')
+      }
+      )
+  </script>
 </head>
 
 <body>
@@ -109,5 +122,6 @@
       </li>
     </ul>
   </footer>
-
 </body>
+
+</html>
